@@ -5,10 +5,15 @@ import java.util.Random;
 class RandomInit {
     int[] arr = new int[5];
     {
-        // TODO: arr 배열을 난수로 채움
+        Random random = new Random();
+        for (int i = 0; i < 5; i++) {
+            arr[i] = random.nextInt(10);
+        }
     }
     void printArray() {
-        // TODO: arr 요소 출력
+        for (int j : arr) {
+            System.out.print(j+" ");
+        }
     }
 }
 
