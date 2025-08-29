@@ -4,10 +4,10 @@ class InitDemo {
     int a = 10;
     int b;
     {
-        // TODO: b 초기화
+        b = 20;
     }
     InitDemo() {
-        // TODO: a와 b의 합 출력
+        System.out.println(a+b);
     }
 }
 
