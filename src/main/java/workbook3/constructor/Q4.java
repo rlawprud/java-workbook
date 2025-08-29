@@ -5,10 +5,14 @@ import java.util.Scanner;
 class Triangle {
     int a, b, c;
     Triangle() {
-        // TODO: 기본 생성자에서 a,b,c 초기화
+        this.a = 1;
+        this.b = 1;
+        this.c = 1;
     }
     Triangle(int a, int b, int c) {
-        // TODO: 매개변수 생성자에서 a,b,c 초기화
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 }
 
