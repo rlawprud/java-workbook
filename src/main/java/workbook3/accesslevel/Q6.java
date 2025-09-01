@@ -8,7 +8,7 @@ class SecureFile {
         this.fileName = fileName;
     }
     public void read(boolean hasPermission) {
-        // TODO: 권한이 있으면 파일 이름 출력, 없으면 "권한 없음" 출력
+        System.out.println(hasPermission ? fileName : "권한 없음");
     }
 }
 
