@@ -8,13 +8,13 @@ interface Movable {
 
 class Robot implements Movable {
     public void move() {
-        // TODO: "Robot moves" 출력
+        System.out.println("Robot move");
     }
 }
 
 class Car implements Movable {
     public void move() {
-        // TODO: "Car moves" 출력
+        System.out.println("Car move");
     }
 }
 
