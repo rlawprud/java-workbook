@@ -8,13 +8,13 @@ interface Playable {
 
 class Piano implements Playable {
     public void play() {
-        // TODO: "Piano plays" 출력
+        System.out.println("Piano plays");
     }
 }
 
 class Guitar implements Playable {
     public void play() {
-        // TODO: "Guitar plays" 출력
+        System.out.println("Guitar plays");
     }
 }
 
