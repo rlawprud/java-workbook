@@ -30,4 +30,5 @@ public class Q2 {
             lang.displayInfo();
         }
     }
+    // 동잏하게, 동적 바인딩 된 메서드가 출력되는 것을 알 수 있음.
 }
