@@ -3,6 +3,7 @@ package main.java.workbook3.accesslevel;
 import java.util.Scanner;
 
 class LibraryBook {
+
     private String title;
     private String author;
 
