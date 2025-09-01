@@ -251,7 +251,7 @@ user2 2
 
 ```
 user1 3 2
-user2 2 5
+user2 2 2
 ```
 
 **조건:**
@@ -267,9 +267,10 @@ class ChatRoom {
     int messagesSent = 0;
     ChatRoom(String name) {
         this.name = name;
+        // TODO: ChatRoom.totalUsers 증가
     }
     void sendMessages(int n) {
-        // TODO: messagesSent와 ChatRoom.totalUsers 증가
+        // TODO: messagesSent 증가
     }
 }
 

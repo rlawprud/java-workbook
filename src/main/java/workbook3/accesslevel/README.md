@@ -194,21 +194,16 @@ Title3 Author3
 import java.util.Scanner;
 
 class LibraryBook {
-    private String title;
-    private String author;
+    String title;
+    String author;
 
     LibraryBook(String title, String author) {
         this.title = title;
         this.author = author;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
+    // TODO: title getter
+    // TODO: author getter
 }
 
 public class Q4 {
@@ -220,9 +215,7 @@ public class Q4 {
             String a = sc.next();
             books[i] = new LibraryBook(t, a);
         }
-        for (LibraryBook b : books) {
-            System.out.println(b.getTitle() + " " + b.getAuthor());
-        }
+        // TODO: 등록한 모든 도서들의 title, author를 출력
     }
 }
 ```

@@ -205,7 +205,7 @@ Hello Java
 **출력 예시:**
 
 ```
-Hello ! Java!
+Hello Java!
 ```
 
 **조건:**

@@ -54,6 +54,7 @@ public class Q1 {
 **출력 예시:**
 
 ```
+5
 7
 ```
 
@@ -91,6 +92,7 @@ Hello Java World
 **출력 예시:**
 
 ```
+HelloJava
 HelloJavaWorld
 ```
 
@@ -132,8 +134,8 @@ tri 3 4
 
 ```
 28.274333882308138
-20
-6
+20.0
+6.0
 ```
 
 **조건:**
@@ -177,6 +179,8 @@ Alice 30
 **출력 예시:**
 
 ```
+문자열: Alice
+정수: 30
 Alice(30)
 ```
 
@@ -208,11 +212,9 @@ public class Q5 {
 **입력 예시:**
 
 ```
-2
-2
+3
 1 2
 3 4
-2
 5 6
 7 8
 ```
@@ -220,7 +222,6 @@ public class Q5 {
 **출력 예시:**
 
 ```
-24
 19 22
 43 50
 ```
@@ -240,26 +241,33 @@ public class Q6 {
         if (type == 2) {
             int n = sc.nextInt();
             int[] arr = new int[n];
-            for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
+            for (int i = 0; i < n; i++) {
+                arr[i] = sc.nextInt();
+            }
             // System.out.println(multiply(arr)); // TODO: multiply(int[]) 메서드 작성 후 주석 해제
         } else {
             int[][] m1 = new int[2][2];
             int[][] m2 = new int[2][2];
+            
+            // 첫 번째 행렬 입력
             for (int i = 0; i < 2; i++) {
                 for (int j = 0; j < 2; j++) {
                     m1[i][j] = sc.nextInt();
                 }
             }
+
+            // 두 번째 행렬 입력
             for (int i = 0; i < 2; i++) {
                 for (int j = 0; j < 2; j++) {
                     m2[i][j] = sc.nextInt();
                 }
-                // TODO: multiply(int[][], int[][]) 메서드 작성 후 주석 해제 아래 주석 해제
-                // int[][] result = multiply(m1, m2); 
             }
+
+            // 행렬 곱셈 수행 및 출력
+            // int[][] result = multiply(m1, m2); // TODO: multiply(int[][], int[][]) 메서드 작성 후 주석 해제
             for (int i = 0; i < 2; i++) {
                 for (int j = 0; j < 2; j++) {
-                   // System.out.print(result[i][j] + (j==1?"":" "));
+                    System.out.print(result[i][j] + (j == 1 ? "" : " "));
                 }
                 System.out.println();
             }
