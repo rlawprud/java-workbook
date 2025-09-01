@@ -8,10 +8,10 @@ class Account {
         this.balance = balance;
     }
     public void deposit(int amount) {
-        // TODO: balance 증가
+        this.balance += amount;
     }
     public void withdraw(int amount) {
-        // TODO: balance 감소
+        this.balance -= amount;
     }
     public int getBalance() {
         return balance;
