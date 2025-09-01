@@ -8,13 +8,13 @@ abstract class Shape {
 
 class Circle extends Shape {
     void draw() {
-        // TODO: "Draw Circle" 출력
+        System.out.println("Draw Circle");
     }
 }
 
 class Rectangle extends Shape {
     void draw() {
-        // TODO: "Draw Rectangle" 출력
+        System.out.println("Draw Rectangle");
     }
 }
 
@@ -33,5 +33,7 @@ public class Q2 {
         for (Shape s : arr) {
             s.draw();
         }
+        // 이 코드 진행을 통해 동적 바인딩 (draw의 오버라이딩)을 확인할 수 있습니다.
+        // draw의 바인딩은 런타임 중에 결정됩니다.
     }
 }
