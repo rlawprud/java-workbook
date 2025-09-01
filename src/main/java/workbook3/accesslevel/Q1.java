@@ -37,6 +37,7 @@ public class Q1 {
         } else {
             acc.withdraw(amt2);
         }
+
         System.out.println(acc.getBalance());
     }
 }
