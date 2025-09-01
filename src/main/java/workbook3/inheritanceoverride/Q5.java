@@ -27,7 +27,7 @@ class SavingsAccount extends Account {
     /** 입금 시 5 % 이자 포함 */
     @Override
     void deposit(int amount) {
-        // TODO: 5 % 이자 포함 로직 작성
+        balance += (int)(amount * 1.05);
     }
 }
 
@@ -39,7 +39,7 @@ class CheckingAccount extends Account {
     /** 인출 시 1 % 수수료 차감 */
     @Override
     void withdraw(int amount) {
-        // TODO: 1 % 수수료 차감 로직 작성
+        balance -= (int) (amount * 1.01);
     }
 }
 
@@ -51,25 +51,27 @@ public class Q5 {
         String kind = sc.next(); // "saving" or "checking"
         int initBal = sc.nextInt();
 
-        // TODO: 아래 [알맞은 타입 선언]에 알맞은 타입을 선언 후 주석 해제
-        /*
-        [알맞은 타입 선언] acc = kind.equals("saving")
+        // 삼항 연산자 : 입렵값이 saving 이면 -> 입금용 계죄
+        // 아닐 시, 출금용 계좌를 생성함.
+        // 생성자로 받는 initBal :
+        // -> 이후 부모 클래스의 생성자에 할당됨.
+        // 따라서, 기본 잔액을 입력값으로 설정함.
+        Account acc = kind.equals("saving")
                 ? new SavingsAccount(initBal)
                 : new CheckingAccount(initBal);
-        */
+
 
         /* ---------- 명령 반복 ---------- */
         while (sc.hasNext()) {
             String cmd = sc.next(); // deposit / withdraw
             int amount = sc.nextInt();
 
-            // TODO: 계좌 생성 주석 해제 후 아래 주석 해제
             if (cmd.equals("deposit")) {
-                // acc.deposit(amount);
+                acc.deposit(amount);
             } else { // withdraw
-                // acc.withdraw(amount);
+                acc.withdraw(amount);
             }
-            // System.out.println(acc.balance);
+            System.out.println(acc.balance);
         }
     }
 }
