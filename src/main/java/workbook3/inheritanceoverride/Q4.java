@@ -17,16 +17,17 @@ class Student extends Person {
         super(name); // super() 맛보기
     }
     void introduce() {
-        // TODO: 학생 소개 출력
+        System.out.println("Hello, I'm " + name + " student.");
     }
 }
 
 class Teacher extends Person {
     Teacher(String name) {
         super(name); // super() 맛보기
+        // 부모 클래스의 생성자를 불러오는 super()입니다.
     }
     void introduce() {
-        // TODO: 교사 소개 출력
+        System.out.println("Hello, I'm " + name + " teacher.");
     }
 }
 
