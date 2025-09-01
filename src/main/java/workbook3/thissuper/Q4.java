@@ -7,7 +7,9 @@ class Employee {
     int salary;
 
     Employee(String name, String dept, int salary) {
-        // TODO: 필드 초기화
+        this.name = name;
+        this.dept = dept;
+        this.salary = salary;
     }
 
     void printInfo() {
@@ -15,15 +17,17 @@ class Employee {
     }
 }
 
-class Manager /* TODO: Employee 상속 */ {
+class Manager extends Employee {
     String team;
 
     Manager(String name, String dept, int salary, String team) {
-        // TODO: super() 호출 및 team 초기화
+        super(name, dept, salary);
+        this.team = team;
     }
 
     void printInfo() {
-        // TODO: super.printInfo() 호출 후 팀 정보 출력
+        super.printInfo();
+        System.out.println(", Team: " + team);
     }
 }
 
