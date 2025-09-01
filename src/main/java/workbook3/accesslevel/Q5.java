@@ -13,8 +13,7 @@ class BankAccount {
     }
 
     public int getBalance(String inputPw) {
-        // TODO: 비밀번호가 맞으면 balance 반환, 아니면 -1 반환
-        return 0;
+        return inputPw.equals(password) ? this.balance : 0;
     }
 }
 
