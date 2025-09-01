@@ -46,4 +46,5 @@ public class Q3 {
             System.out.println(s.area());
         }
     }
+    // 동일하게, 동적 바인딩 된 메서드를 통해 출력되는 것을 알 수 있다.
 }
