@@ -9,7 +9,15 @@ public class Q4 {
         int b = sc.nextInt();
         String op = sc.next();
         try {
-            // TODO: op에 따라 계산 및 출력
+            switch (op) {
+                case "+" -> System.out.println(a + b);
+                case "-" -> System.out.println(a - b);
+                case "*" -> System.out.println(a * b);
+                case "/" -> System.out.println(a / b);
+                default -> {
+                    throw new Exception();
+                }
+            }
         } catch (ArithmeticException e) {
             System.out.println("Division by zero");
         } catch (Exception e) {
