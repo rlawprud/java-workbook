@@ -5,6 +5,7 @@ import java.util.Scanner;
 class Box {
     int width, height, depth;
     Box() {
+
         // 이 클래스의 생성자를 불러옵니다.
         // 아무런 값이 입력되지 않았을 경우, 모든 값이 1로 초기화 됩니다.
         this(1,1,1);
