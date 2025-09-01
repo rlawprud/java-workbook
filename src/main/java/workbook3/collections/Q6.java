@@ -18,6 +18,22 @@ public class Q6 {
             list2.add(sc.nextInt());
         }
 
-        // TODO: 합집합과 교집합 구해 출력
+        HashSet<Integer> sumOfSet = new HashSet<>();
+        // 합집합
+        for (int i = 0; i < n; i++) {
+            sumOfSet.add(list1.get(i));
+            sumOfSet.add(list2.get(i));
+        }
+
+        // list1의 요소 중 list2가 가지고 있지 않은 요소를 제거함.
+        list1.retainAll(list2);
+
+        for (int i : sumOfSet) {
+            System.out.print(i+" ");
+        }
+        System.out.println();
+        for (int i : list1) {
+            System.out.print(i+" ");
+        }
     }
 }
