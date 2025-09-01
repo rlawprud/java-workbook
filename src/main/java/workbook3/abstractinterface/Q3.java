@@ -15,8 +15,7 @@ class Rectangle extends Shape {
     }
 
     double perimeter() {
-        // TODO: 둘레 계산
-        return 0;
+        return 2*(w+h);
     }
 }
 
@@ -30,8 +29,7 @@ class Triangle extends Shape {
     }
 
     double perimeter() {
-        // TODO: 둘레 계산
-        return 0;
+        return a+b+c;
     }
 }
 
