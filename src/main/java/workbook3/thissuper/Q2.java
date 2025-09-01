@@ -5,10 +5,14 @@ import java.util.Scanner;
 class Box {
     int width, height, depth;
     Box() {
-        // TODO: 매개변수 생성자 호출하여 1,1,1로 초기화
+        // 이 클래스의 생성자를 불러옵니다.
+        // 아무런 값이 입력되지 않았을 경우, 모든 값이 1로 초기화 됩니다.
+        this(1,1,1);
     }
     Box(int w, int h, int d) {
-        // TODO: 멤버 초기화
+        this.width = w;
+        this.height = h;
+        this.depth = d;
     }
 }
 
