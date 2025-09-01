@@ -2,8 +2,10 @@ package main.java.workbook3.inheritanceoverride;
 
 import java.util.Scanner;
 
+// 추상 클래스 : 인스턴스화 할 수 없습니다.
 abstract class Employee {
-    abstract double getPay(); // TODO: 급여 반환
+    // 추상 메서드 getPay()
+    abstract double getPay(); // 급여 반환
 }
 
 class FullTimeEmployee extends Employee {
@@ -12,8 +14,7 @@ class FullTimeEmployee extends Employee {
         this.monthlySalary = monthlySalary;
     }
     double getPay() {
-        // TODO: 정규직 급여 계산
-        return 0;
+        return monthlySalary;
     }
 }
 
@@ -24,8 +25,7 @@ class PartTimeEmployee extends Employee {
         this.hours = hours;
     }
     double getPay() {
-        // TODO: 시간제 급여 계산
-        return 0;
+        return hourlyRate * hours;
     }
 }
 
