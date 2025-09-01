@@ -15,8 +15,7 @@ class FullTimeEmployee extends Employee {
     }
 
     double calculateSalary() {
-        // TODO: 급여 계산
-        return 0;
+        return  base + bonus;
     }
 }
 
@@ -29,8 +28,7 @@ class PartTimeEmployee extends Employee {
     }
 
     double calculateSalary() {
-        // TODO: 급여 계산
-        return 0;
+        return  hourly * hours;
     }
 }
 
