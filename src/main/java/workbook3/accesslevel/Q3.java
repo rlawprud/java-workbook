@@ -3,6 +3,7 @@ package main.java.workbook3.accesslevel;
 import java.util.Scanner;
 
 class Employee {
+
     public String name;
     private int salary;
 
