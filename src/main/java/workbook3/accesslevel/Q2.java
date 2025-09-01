@@ -15,6 +15,7 @@ class Student {
 public class Q2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         String n = sc.next();
         Student s = new Student();
         s.setName(n);
