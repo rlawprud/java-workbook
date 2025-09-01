@@ -47,11 +47,20 @@ public class Q5 {
         Scanner sc = new Scanner(System.in);
         int k = sc.nextInt();
         for (int i = 0; i < k; i++) {
+            Polygon p;
             String t = sc.next();
-            // TODO: 입력받은 t의 값에 따라 Polygon 타입의 참조변수 p 에 알맞은 구현체를 넣어(참조해)줍니다.
-            // TODO: triangle은 세변 a, b, c를 입력받습니다.
-            // TODO: rect은 넓이(w)와 높이(h) 값을 입력받습니다.
-            // TODO: System.out.println(p.area() + " " + p.perimeter()); 를 선언하여 면적과 둘레를 출력한다.
+
+            // 어차피 두 개는 입력받아야 합니다!
+            double a = sc.nextDouble();
+            double b = sc.nextDouble();
+
+            if (t.equals("triangle")) {
+                double c = sc.nextDouble();
+                p = new Triangle(a, b, c);
+            } else {
+                p = new Rectangle(a, b);
+            }
+            System.out.println(p.area() + " " + p.perimeter());
         }
     }
 }
