@@ -11,8 +11,7 @@ public class Q2 {
             arr[i] = sc.nextInt();
         }
         try {
-            // TODO: index 입력 받기
-            // TODO: arr[index] 출력
+            System.out.println(arr[sc.nextInt()]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Index out of bounds");
         }
