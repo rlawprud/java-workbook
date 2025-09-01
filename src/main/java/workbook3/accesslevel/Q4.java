@@ -33,4 +33,6 @@ public class Q4 {
             System.out.println(b.getTitle() + " " + b.getAuthor());
         }
     }
+    // 생성자로 필드 초기화
+    // 이후 getter를 사용해 값을 불러옴 (setter 부재, 읽기 전용.)
 }
