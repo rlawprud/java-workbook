@@ -8,7 +8,7 @@ public class Q1 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         try {
-            // TODO: a/b 결과 출력
+            System.out.println(a/b);
         } catch (ArithmeticException e) {
             System.out.println("Division by zero");
         }
