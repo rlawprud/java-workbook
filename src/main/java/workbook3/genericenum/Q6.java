@@ -18,14 +18,19 @@ class Pair<K, V> {
 
 public class Q6 {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+
         String k1 = sc.next();
         int v1 = sc.nextInt();
+
         String k2 = sc.next();
         String v2 = sc.next();
-        // TODO: 위 입력값에 알맞은 타입의 Pair 제네릭 클래스 선언
 
-        // TODO: 선언한 제네릭 객체 2개 출력
+        Pair<String, Integer> pair1 = new Pair<>(k1, v1);
+        Pair<String, String> pair2 = new Pair<>(k2, v2);
 
+        System.out.println(pair1.toString());
+        System.out.println(pair2.toString());
     }
 }
